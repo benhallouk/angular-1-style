@@ -1,0 +1,15 @@
+<div data-ng-controller="main as vm">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div data-ng-include="'app/layout/topnav.html'"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div data-ng-include="'app/layout/sidebar.html'"></div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">            
+            <div data-ng-view class="shuffle-animation"></div>
+        </div>
+      </div>
+    </div>
+</div>
